@@ -1145,3 +1145,6 @@ div.questionbankwindow.block {
     clear: left;
     width: 95% !important;
 }
+#footer-fix div.johndocsleft  div {
+	padding-right: 8px;
+}

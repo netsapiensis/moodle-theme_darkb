@@ -124,7 +124,7 @@ echo $OUTPUT->doctype() ?>
                 echo "<div class='johndocsleft' style='float: none;'>";
                 echo $OUTPUT->login_info();
                 //echo $//OUTPUT->home_link();
-                //echo $OUTPUT->standard_footer_html();
+                echo $OUTPUT->standard_footer_html();
                 echo "</div>";
             ?>
             <div class="johndocs">
