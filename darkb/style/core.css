@@ -87,11 +87,15 @@ a:focus {
 }
 
 #ebutton {
-	width: 150px;
+	width: 200px;
 	float: right;
 	text-align: right;
 	margin-top: 10px;
 	margin-right: 20px;
+}
+
+#ebutton form input {
+    margin: 0 5px;
 }
 
 
@@ -154,7 +158,6 @@ div.jcontrolsright div.singlebutton, div.jcontrolsright div.forumsearch {
 
 /** foot wraps and inner divs **/
 #footerwrapper {
-	height: 40px;
 	background: [[setting:maincolor]] url([[pix:theme|shadbottom]]) repeat-x top left;
 	margin-top: 15px;
 	
@@ -257,14 +260,16 @@ span.arrow.sep {
     margin: 0 0 15px 0 !important;
     padding: 5px;
     border: 1px solid #ccc;
-    background: #fff;
     -webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	-webkit-box-shadow: 0px 1px 3px #ccc;
 	-moz-box-shadow: 0px 1px 3px #ccc;
 	box-shadow: 0px 1px 3px #ccc;
+}
 
+.block .content {
+    background-color:[[setting:backgroundcolor]];
 }
 
 .block div.header {
@@ -311,7 +316,7 @@ span.arrow.sep {
 .block div.content {
     font-size: 12px;
     font-weight: 200;
-    padding: 10px 15px 15px;
+    padding: 10px;
 }
 
 /** extra left padding on right side blocks **/
@@ -1148,3 +1153,85 @@ div.questionbankwindow.block {
 #footer-fix div.johndocsleft  div {
 	padding-right: 8px;
 }
+
+.block_settings .block_tree li.item_with_icon > p img {
+    left: 0;
+    max-width: 16px;
+    max-height: 16px;
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+}
+
+.block_settings .block_tree li.item_with_icon > p.tree_item.leaf.hasicon img {
+    top: 3px;
+}
+
+.block_settings .block_tree li.item_with_icon > p {
+    margin: 4px 0;
+    padding-left: 20px;
+}
+
+.jsenabled .block_settings .block_tree .collapsed .tree_item.branch {
+    background-position: left center;
+}
+
+input#shortsearchbox, input#coursesearchbox {
+    margin: 0 8px;
+}
+
+.langmenu form div {
+    padding-top: 2px;
+}
+
+form select.menulang {
+    margin: 5px 0 0 5px;
+}
+
+.course-content ul.topics,
+.course-content ul.weeks {
+    margin: 0;
+}
+
+.helplink img {
+    margin: 0 5px;
+}
+
+#switchcategory select {
+    margin: 0 8px;
+}
+
+.block .section_add_menus .urlselect select {
+    width: 140px;
+}
+
+.block .section_add_menus div.urlselect {
+    padding: 4px 0;
+}
+form .felement select, form .felement input  {
+    margin: 0 4px;
+}
+.mform .fitem .fitemtitle {
+    padding-right: 10px;
+}
+
+.block form input[type=text] {
+    margin-bottom: 5px;
+    margin-right: 4px;
+}
+
+.jumpmenu select {
+    margin: 0 8px;
+}
+
+#page-content #region-main-box {left:[[setting:regionwidth]];}
+#page-content #region-post-box {margin-left:-[[setting:regionwidthdouble]];}
+#page-content #region-pre {width:[[setting:regionwidth]];left:[[setting:regionwidth]];}
+#page-content #region-post {width:[[setting:regionwidth]];}
+#page-content #region-main {margin-left:[[setting:regionwidthdouble]];}
+.side-pre-only #page-content #region-post-box {margin-left:-[[setting:regionwidth]];}
+.side-pre-only #page-content #region-main {margin-left:[[setting:regionwidth]];}
+
+
+/** Custom CSS **/
+[[setting:customcss]]

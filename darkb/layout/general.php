@@ -22,7 +22,11 @@ if ($showsidepre && !$showsidepost) {
 if ($hascustommenu) {
     $bodyclasses[] = 'has_custom_menu';
 }
-
+if (!empty($PAGE->theme->settings->footnote)) {
+    $footnote = $PAGE->theme->settings->footnote;
+} else {
+    $footnote = '<!-- There was no custom footnote set -->';
+}
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes() ?>>
 <head>
@@ -33,8 +37,7 @@ echo $OUTPUT->doctype() ?>
 <body id="<?php echo $PAGE->bodyid ?>" class="<?php echo $PAGE->bodyclasses.' '.join(' ', $bodyclasses) ?>">
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<div id="page">
-		
+<div id="page">	
 <div id="headerwrap"><div id="page-header"></div>
 	<div id="headerinner">
 	
@@ -50,28 +53,27 @@ echo $OUTPUT->doctype() ?>
  					<div id="custommenu2"><div id="custommenu"><?php echo $custommenu; ?></div></div>
 				<?php } ?>
 	<div id="ebutton">
-	<?php if ($hasnavbar) { echo $PAGE->button; } ?>
+	<?php //if ($hasnavbar) { echo $PAGE->button; } ?>
 	</div>			
 		</div>
 </div>					
 <div id="jcontrols_button">
-						<div class="jcontrolsleft">
-						<?php if ($hasnavbar) { ?>
-        					<div class="navbar clearfix">
-            					<div class="breadcrumb"> <?php echo $OUTPUT->navbar();  ?></div>
-            
-        					</div>
-        				<?php } ?>
-						</div>
-						
-						<div class="jcontrolsright">
-				<?php if ($hasheading) { 
-            		echo $OUTPUT->lang_menu();
-            		echo $OUTPUT->login_info();
-            		echo $PAGE->headingmenu;
-            	} ?>
-				</div>
-	
+    <div class="jcontrolsleft">
+        <?php if ($hasnavbar) { ?>
+            <div class="navbar clearfix">
+                <div class="breadcrumb"> <?php echo $OUTPUT->navbar();  ?></div>
+            </div>
+        <?php } ?>
+    </div>
+	<div class="jcontrolsright">
+        <?php if ($hasheading) { 
+            if (!empty($PAGE->theme->settings->alwayslangmenu)) {
+                echo $OUTPUT->lang_menu();
+            }
+            echo $OUTPUT->login_info();
+            echo $PAGE->headingmenu;
+        } ?>
+    </div>
 </div>	
 <div id="contentwrapper">	
 	<!-- start OF moodle CONTENT -->
@@ -130,6 +132,7 @@ echo $OUTPUT->doctype() ?>
             <div class="johndocs">
                 <?php echo page_doc_link(get_string('moodledocslink')) ?>
             </div>
+            <?php echo $footnote; ?>
             <?php } ?>
             <div class="clear"></div>
         </div>
