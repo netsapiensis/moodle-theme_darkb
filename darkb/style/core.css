@@ -759,6 +759,18 @@ table.rolecap td.risk {
 	padding-right: 0px;
 }
 
+#translator td {
+	font-size: 12px;
+}
+
+.path-admin-report-customlang #translator tr td textarea {
+	min-width: 300px;
+}
+
+.path-admin-report-customlang #translator tr td div.preformatted {
+	max-width: 400px;
+}
+
 /** Coursebox and category box stuff for front page **/
 
 ul.unlist, ul.unlist li, ul.unlist li div, ul.unlist li div ul, ul.unlist li div ul li {
@@ -1121,17 +1133,18 @@ div.clear {
 #footer-fix {
     text-align: center;
     padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-#footer-fix div {
-    display: inline !important;
-    width: auto !important;
+#footer-fix #new-footer {
+	
 }
 
-#footer-fix .johndocs {
-    margin-top: 3px;
-    width: 114px !important;
-    display: block !important;
+#footer-fix #new-footer .logininfo {
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 11px;
 }
 
 .ie7 #footer-fix .johndocs {

@@ -121,18 +121,17 @@ echo $OUTPUT->doctype() ?>
 <div id="footerwrapper">
     <div id="footerinner" style="text-align: center">
         <div id="footer-fix">
-            <div id="page-footer"></div>
-            <?php if ($hasfooter) { 
-                echo "<div class='johndocsleft' style='float: none;'>";
-                echo $OUTPUT->login_info();
-                //echo $//OUTPUT->home_link();
-                echo $OUTPUT->standard_footer_html();
-                echo "</div>";
-            ?>
-            <div class="johndocs">
+			<div id="new-footer">
+				<?php if ($hasfooter) { 
+					echo $OUTPUT->login_info();
+					//echo $//OUTPUT->home_link();
+					//echo $OUTPUT->standard_footer_html();
+				?>
+			</div>
+			<?php /* <div class="johndocs"> 
                 <?php echo page_doc_link(get_string('moodledocslink')) ?>
-            </div>
-            <?php echo $footnote; ?>
+            <?php /*</div>
+            <?php echo $footnote; ?> */ ?>
             <?php } ?>
             <div class="clear"></div>
         </div>
