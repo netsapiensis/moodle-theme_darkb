@@ -10,12 +10,17 @@ html,body {
 	background-image: -webkit-gradient(linear,left top,left bottom,
 		color-stop(0, 		#fafafa),
 		color-stop(1, 		#cccccc));
-
+    font-size:[[setting:fontsizereference]];
 }
 
 html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, input, textarea {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+h1 {font-size:140%;font-weight:bold;}
+h2 {font-size:130%;}
+h3 {font-size:120%;}
+h4 {font-weight:bold;}
 
 html a:hover,body a:hover {
     text-decoration: underline;
@@ -59,7 +64,7 @@ a:focus {
 #headerwrap {
 	height: 80px;
 	clear: both;
-	background: [[setting:maincolor]] url([[pix:theme|header]]) repeat-x top left;
+	background: [[setting:headerbgc]] url([[pix:theme|header]]) repeat-x top left;
 	border-bottom: 1px solid #fff;
 }
 
@@ -83,7 +88,7 @@ a:focus {
     padding: 0px 0px 0px 0px !important;
     line-height: 28px !important;
     margin: 0px 0px 0px 5px !important;
-    font-size: 9px;
+    font-size: 70%;
 }
 
 #ebutton {
@@ -125,7 +130,7 @@ div#jcontrols_button {
 div.jcontrolsleft {
     margin-left: 15px;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 100%;
     float: left;
     min-width: 100px;
     max-width: 45%;
@@ -143,7 +148,7 @@ div.jcontrolsright {
 .jcontrolsright .logininfo {
 	line-height: 30px;
 	color: #fff;
-	font-size: 11px;
+	font-size: 85%;
 	font-weight: 200;
 	text-align: right;
 }
@@ -177,7 +182,7 @@ div.jcontrolsright div.singlebutton, div.jcontrolsright div.forumsearch {
 .johndocs {
     float: right;
     height: 15px;
-    font-size: 8px;
+    font-size: 60%;
     margin: 10px 3px 0px 0px;
     color: #333333;
 }
@@ -192,7 +197,7 @@ div.johndocsleft, span.johndocsleft {
     height: 15px;
     margin-top: 10px;
     width: 300px;
-    font-size: 11px;
+    font-size: 85%;
 }
 
 /** Some breadcrumb style **/
@@ -206,7 +211,7 @@ div.johndocsleft, span.johndocsleft {
     text-decoration: none;
     color: #eee;
     text-shadow: 1px -1px 1px #333;
-    font-size: 11px;
+    font-size: 85%;
 }
 
 .breadcrumb li a:hover {
@@ -297,7 +302,7 @@ span.arrow.sep {
 
 .title h2 {
     padding: 0px 0px 0px 10px;
-    font-size: 12px;
+    font-size: 90%;
     text-transform: uppercase;
     margin: 0 !important;
     font-weight: 400;
@@ -314,7 +319,7 @@ span.arrow.sep {
 }
 
 .block div.content {
-    font-size: 12px;
+    font-size: 90%;
     font-weight: 200;
     padding: 10px;
 }
@@ -345,7 +350,7 @@ span.arrow.sep {
 }
 
 .block_messages.block div.content .list a {
-    font-size: 10px;
+    font-size: 75%;
 }
 
 .block_login.block div.content div {
@@ -354,14 +359,14 @@ span.arrow.sep {
 }
 
 .block_login.block div.content label {
-    font-size: 11px;
+    font-size: 85%;
     display: inline-block;
     min-width: 50px;
     margin-right: 3px;
 }
 
 .block_myprofile div.content div {
-    font-size: 11px;
+    font-size: 85%;
 }
 
 .block_myprofile div.content div.myprofileitem.picture {
@@ -370,14 +375,14 @@ span.arrow.sep {
 }
 
 .block_myprofile div.myprofileitem.fullname {
-    font-size: 12px;
+    font-size: 90%;
     font-weight: 800;
 }
 
 .block_myprofile div.myprofileitem.edit {
     clear: both;
     font-weight: 800;
-    font-size: 12px;
+    font-size: 90%;
 }
 
 .block_news_items div.content li.post {
@@ -386,7 +391,7 @@ span.arrow.sep {
 }
 
 .block_news_items div.content div.head.clearfix {
-    font-size: 11px;
+    font-size: 85%;
 }
 
 .block_news_items div.content div.info {
@@ -396,7 +401,7 @@ span.arrow.sep {
 /** inner block style for decent display of recent news, etc **/
 
 .block_recent_activity.block_docked div.content h2.main, .block_recent_activity.block_docked div.content h3.main, .side-pre .block div.content h2.main,.side-post .block div.content h2.main,.block div.content h3.main,.block div.content h2 {
-    font-size: 13px;
+    font-size: 100%;
     color: #333;
     font-weight: 800;
     background: none;
@@ -406,7 +411,7 @@ span.arrow.sep {
 /** a few styles for the tabs **/
 
 div.tabtree li a span {
-    font-size: 11px;
+    font-size: 85%;
 }
 
 /** yui overlays **/
@@ -438,7 +443,7 @@ div.yui3-widget-bd h1.helpheading {
 /**moodle dropdown css for yui menu **/
 
 #custommenu2 {
-    font-size: 13px;
+    font-size: 100%;
     font-weight: 600;
     border: none !important;
     float: left;
@@ -548,7 +553,7 @@ div.dockeditempanel_content a {
 
 div.dockeditempanel_hd {
     text-align: left;
-    font-size: 12px;
+    font-size: 90%;
 }
 
 div.dockeditempanel_hd {
@@ -560,7 +565,7 @@ div.dockeditempanel_hd {
 
 div.dockeditempanel_hd h2 {
     font-weight: 600;
-    font-size: 12px;
+    font-size: 90%;
 }
 
 div.dockeditempanel_bd ul, div.dockeditempanel_bd li {
@@ -585,7 +590,7 @@ div.dockeditempanel_bd {
 /** main headings **/
 
 h3.sectionname, h2.headingblock,h2.main,h3.main, h2.main a, h3.main a, div.loginpanel h2, div.signuppanel h2 {
-    font-size: 18px;
+    font-size: 140%;
     text-transform: uppercase;
     text-align: right;
     padding-bottom: 2px;
@@ -598,7 +603,7 @@ h3.sectionname, h2.headingblock,h2.main,h3.main, h2.main a, h3.main a, div.login
     }
 
  #page-course-info h2.main, h3.sectionname, h2.main a, h3.main a, div.loginpanel h2, div.signuppanel h2, div.hd h3.main {
-    font-size: 16px;
+    font-size: 120%;
     background: none;
 }
 
@@ -687,7 +692,7 @@ div.subscribelink {
 
 .subscribelink a {
     text-decoration: none;
-    font-size: 11px;
+    font-size: 85%;
 }
 
 /**tables and fields and foms oh my! **/
@@ -698,14 +703,14 @@ div.subscribelink {
 }
 
 .ftoggler {
-    font-size: 18px;
+    font-size: 140%;
     color: #333333;
 }
 
 div.notifysuccess {
     width: 80%;
     margin: 0 auto;
-    font-size: 15px;
+    font-size: 115%;
     color: #008500;
     border: 3px solid #dadada;
     text-align: center;
@@ -718,7 +723,7 @@ table a {
 }
 
 td.maincalendar table.calendartable th, table.rolecap .header,.generaltable .header,.forumheaderlist .header,.files .header,.editcourse .header,.logtable .header,#attempts .header,table#categoryquestions th {
-    font-size: 11px;
+    font-size: 85%;
     font-weight: 200;
     text-decoration: none;
     color: #fff !important;
@@ -733,7 +738,7 @@ table#categoryquestions th a {
 .generaltable .header a,.forumheaderlist .header a, th.header.questionnametext a, th.header a {
     border: none;
     color: #fff !important;
-    font-size: 12px;
+    font-size: 90%;
     text-decoration: none;
     padding: 5px;
 }
@@ -760,7 +765,7 @@ table.rolecap td.risk {
 }
 
 #translator td {
-	font-size: 12px;
+	font-size: 90%;
 }
 
 .path-admin-report-customlang #translator tr td textarea {
@@ -791,12 +796,12 @@ div.coursebox h3.name {
 }
 
 div.coursebox h3.name a {
-    font-size: 16px;
+    font-size: 120%;
     font-weight: 400;
 }
 
 .unlist div.summary {
-    font-size: 14px;
+    font-size: 108%;
     color: #666666;
     font-style: italic;
 }
@@ -807,11 +812,11 @@ div.coursebox h3.name a {
 }
 
 .unlist ul.teachers li {
-    font-size: 10px;
+    font-size: 75%;
 }
 
 .unlist ul.teachers li a {
-    font-size: 11px;
+    font-size: 85%;
 }
 
 div.categorybox {
@@ -823,7 +828,7 @@ td.category.name a {
     padding-left: 20px;
     background-image: url([[pix:theme|jcourse]]) no-repeat 0 50%;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 120%;
 }
 
 #course-index td.category.name a {
@@ -836,7 +841,7 @@ table.categorylist td {
 }
 
 div.course_category_tree a {
-    font-size: 16px;
+    font-size: 120%;
     font-weight: 400;
     text-decoration: none;
 }
@@ -854,7 +859,7 @@ div.course_category_tree div.course.odd {
 }
 
 div.course_category_tree div.course a {
-    font-size: 14px;
+    font-size: 108%;
 }
 
 div.category.subcategory.with_children {
@@ -862,7 +867,7 @@ div.category.subcategory.with_children {
 }
 
 div.course_category_tree div.controls {
-    font-size: 10px;
+    font-size: 75%;
     color: #666;
     text-transform: uppercase;
 }
@@ -883,7 +888,7 @@ div.course_category_tree div.controls div {
 }
 
 #page-course-view-weeks .weekdates {
-    font-size: 1em;
+    font-size: 100%;
     font-weight: normal;
     color: #777;
     padding: 2px;
@@ -905,7 +910,7 @@ div.course_category_tree div.controls div {
 
 
 span.completionprogress {
-    font-size: 11px;
+    font-size: 85%;
     font-weight: 200;
 }
 
@@ -947,7 +952,7 @@ table.glossarypost {
 }
 
 table.glossarypost td.entry h3 {
-    font-size: 20px;
+    font-size: 150%;
 }
 
 /** a few quick wiki styles **/
@@ -957,7 +962,7 @@ table.glossarypost td.entry h3 {
 }
 
 #page-mod-wiki-view h2.wiki_headingtitle {
-    font-size: 22px;
+    font-size: 170%;
     font-family: Georgia, serif;
     color: #333333;
     font-weight: 600;
@@ -981,7 +986,7 @@ table.glossarypost td.entry h3 {
 div#intro {
     border: none;
     text-align: center;
-    font-size: 14px;
+    font-size: 108%;
     color: #333333;
 }
 
@@ -995,7 +1000,7 @@ div.questionbankwindow.block div.header {
 
 div.questionbankwindow.block div.header a {
     color: #333333 !important;
-    font-size: 11px;
+    font-size: 85%;
 }
 
 div.generalbox, div.section {
@@ -1009,14 +1014,14 @@ div.generalbox.sitetopic, div.generalbox.authsui,#page-course-info div.generalbo
 }
 
 div.generalbox.firstpageoptions h3.main {
-    font-size: 16px;
+    font-size: 120%;
 }
 
 div.redirectmessage {
     width: 60%;
     margin: 10px auto 0 auto;
     border: none;
-    font-size: 13px;
+    font-size: 100%;
     background: #fff url([[pix:theme|ajax-loader]]) no-repeat 50% 100%;
     padding: 20px;
 }
@@ -1034,7 +1039,7 @@ div#newmessageoverlay {
 
 div#newmessageoverlay a {
     text-decoration: none;
-    font-size: 11px;
+    font-size: 85%;
 }
 
 #page-mod-page-view div.generalbox {
@@ -1048,7 +1053,7 @@ div#tablecontainer {
 }
 
 div.course-content div.availabilityinfo {
-    font-size: 11px;
+    font-size: 85%;
     font-style: italic;
     padding: 2px;
     border-bottom: 1px dashed #dadada;
@@ -1119,7 +1124,7 @@ div.singlebutton.forumaddnew {
    font-weight: bold;
   text-decoration: none;
   text-shadow: 0 1px 0px  #fff;
-  font-size: 12px;
+  font-size: 90%;
 }
 
 #ebutton td input[type="submit"] {
@@ -1144,7 +1149,7 @@ div.clear {
 	width: 300px;
 	margin: 0 auto;
 	text-align: center;
-	font-size: 11px;
+	font-size: 85%;
 }
 
 .ie7 #footer-fix .johndocs {

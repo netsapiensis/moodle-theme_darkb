@@ -5,6 +5,24 @@ defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
 
+    // font size reference
+    $name = 'theme_darkb/fontsizereference';
+    $title = get_string('fontsizereference','theme_darkb');
+    $description = get_string('fontsizereferencedesc', 'theme_darkb');
+    $default = '13';
+    $choices = array(11=>'11px', 12=>'12px', 13=>'13px', 14=>'14px', 15=>'15px', 16=>'16px');
+    $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+    $settings->add($setting);
+    
+    // page header background colour setting
+    $name = 'theme_darkb/headerbgc';
+    $title = get_string('headerbgc','theme_darkb');
+    $description = get_string('headerbgcdesc', 'theme_darkb');
+    $default = '#0A1F33';
+    $previewconfig = array('selector'=>'#headerwrap', 'style'=>'backgroundColor');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
+    $settings->add($setting);
+    
     // Background colour setting
     $name = 'theme_darkb/backgroundcolor';
     $title = get_string('backgroundcolor','theme_darkb');

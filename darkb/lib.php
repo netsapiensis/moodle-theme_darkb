@@ -2,6 +2,22 @@
 
 function darkb_process_css($css, $theme) {
     
+    // Set the font reference size
+    if (empty($theme->settings->fontsizereference)) {
+        $fontsizereference = '13'; // default
+    } else {
+        $fontsizereference = $theme->settings->fontsizereference;
+    }
+    $css = darkb_set_fontsizereference($css, $fontsizereference);
+    
+    // Set the page header background color
+    if (empty($theme->settings->headerbgc)) {
+        $headerbgc = '#0A1F33'; // default 
+    } else {
+        $headerbgc = $theme->settings->headerbgc;
+    }
+    $css = darkb_set_headerbgc($css, $headerbgc);
+    
     if (!empty($theme->settings->backgroundcolor)) {
         $backgroundcolor = $theme->settings->backgroundcolor;
     } else {
@@ -45,7 +61,17 @@ function darkb_process_css($css, $theme) {
     return $css;
 }
 
+function darkb_set_fontsizereference($css, $fontsizereference) {
+    $tag = '[[setting:fontsizereference]]';
+    $css = str_replace($tag, $fontsizereference.'px', $css);
+    return $css;
+}
 
+function darkb_set_headerbgc($css, $headerbgc) {
+    $tag = '[[setting:headerbgc]]';
+    $css = str_replace($tag, $headerbgc, $css);
+    return $css;
+}
 
 function darkb_set_linkcolor($css, $linkcolor) {
     $tag = '[[setting:linkcolor]]';

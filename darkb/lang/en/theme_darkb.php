@@ -11,6 +11,9 @@ $string['logodesc'] = 'Change the logo of this theme by entering the URL to a ne
 $string['linkcolor'] = 'link';
 $string['linkcolordesc'] = 'Set the color of links in the theme, use html hex code.';
 
+$string['fontsizereference'] = 'Font size reference';
+$string['fontsizereferencedesc'] = 'This allows you to set the default font size for this theme. It is not recommended to set this higher than 13px as it is known to cause display problems with certain blocks.';
+
 $string['maincolor'] = 'maincolor';
 $string['maincolordesc'] = 'Set the color hex code of the header, dock bar and other areas. Looks best as a dark or saturated color.';
 $string['backgroundcolor'] = 'Blocks background color';
@@ -23,3 +26,5 @@ $string['footnote'] = 'Footnote';
 $string['footnotedesc'] = 'The content from this textarea will be displayed in the footer of every page.';
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Any CSS you enter here will be added to every page allowing your to easily customise this theme.';
+$string['headerbgc'] = 'Header background colour';
+$string['headerbgcdesc'] = 'This sets the blocks header background colour for the theme.';
