@@ -1,0 +1,314 @@
+body{font:62.5% "Helvetica Neue",Arial,Helvetica,sans-serif; margin:0; padding:0; background:#ccc; text-align:left;}
+
+
+a:active{ outline:none}
+
+:focus{ -moz-outline-style:none}
+
+img{border:none}
+html, body{height:100%}
+/***
+ ***set wrapper neg margin to same as #myfoot height....
+ ***/
+#wrapper{min-height:100%; height:auto !important; height:100%; margin:0 auto -50px}
+#contents{margin-top:20px; margin-right:auto; margin-left:auto; width:98%; text-align:left; margin-bottom:50px}
+#content { padding-bottom: 10px;}
+#myfoot{height:50px; background:url(images/footback.png); border-top:2px solid #fff}
+
+#myfootinner{padding:5px; color:#fff; font-size: 12px; text-align: center;}
+#myfootinner a{color:#fff; font-size: 12px;}
+#contents a{color:#113759}
+#contentsin{width:100%; height:100%}
+
+#myfootinner .logininfo { font-size: 12px; text-align: center;}
+ 
+#contentbox{margin-top:0px; margin-bottom:0px; width:100%;  font-family:"Helvetica Neue",Arial,Helvetica,sans-serif; font-size:14px}
+
+ html>/**/body #contentbox{margin-top:0px; margin-bottom:0px; width:100%; font-family:"Helvetica Neue",Arial,Helvetica,sans-serif; font-size:14px}
+#menu{margin-top:11px; margin-right:auto; margin-left:auto; width:90%; min-width:800px; text-align:left; height:64px}
+
+#topbar{position:relative; margin-right:auto; margin-left:auto; width:98%}
+.topsad{display:inline; float:right; margin-top:-28px; margin-bottom:-28px; color:#fff; text-align:right}
+
+.topsad a, .topsad a:visited{color:#fff; font-size: 12px;}
+.topsad ul, .topsad li, .topsad li a{list-style-type:none; padding:0; margin:0; background:none !important; display:inline}
+.topsad li{padding-right:6px; padding-left:6px; border-right:1px solid #333; font-size: 12px;}
+.topsad li.topslast{padding-right:0px; padding-left:6px; border-right:none}
+#logopics{float:left; margin-top:8px; margin-left:5px}
+
+.echohead{margin-top:5px; margin-left:5px; margin-right:25px; font-size:27px; color:#fff; float:left; width:109px; height:45px; background:url(images/logos.png) no-repeat}
+.bmenu{float:left; margin-top:22px}
+.bmenu ul, .bmenu li, .bmenu li a{list-style-type:none; padding:0; margin:0; background:none !important; display:inline}
+.bmenu li{padding-right:10px; padding-left:10px; padding-bottom:8px}
+.bmenu li.topslast{padding-right:0px; padding-left:6px; border-right:none}
+
+.bmenu li a, .bmenu li a:visited{color:#aaa; text-transform:uppercase; font-weight:200; font-size:11px; text-shadow:0 -1px 1px rgba(0,0,0,0.25)}
+
+.bmenu li.current a, .bmenu li a:hover{color:#fff; text-decoration:none}
+.bmenu li.current, .bmenu li:hover{border-bottom:1px solid #333}
+.csearch{float:right;  width:201px;     height:31px;     background:url(images/sbox.png); color:#fff; margin-top:10px}
+
+.navbutton2 fieldset{background:none !important; border:none !important}
+
+ul#topnav li .sub{position:absolute; top:119px; z-index:9999; width:300px; background:#fff; padding:20px 20px 20px; float:left; text-shadow:none; border-left:4px solid #0c253d; border-right:4px solid #0c253d; border-bottom:4px solid #0c253d; margin-left:80px; /*--Bottom right rounded corner--*/-moz-border-radius-bottomright:5px; -khtml-border-radius-bottomright:5px; -webkit-border-bottom-right-radius:5px; /*--Bottom left rounded corner--*/-moz-border-radius-bottomleft:5px; -khtml-border-radius-bottomleft:5px; -webkit-border-bottom-left-radius:5px; -moz-box-shadow:0 1px 3px rgba(0,0,0,0.5); -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5); display:none}
+ul#topnav li .row{clear:both; float:left; width:100%; margin-bottom:10px}
+ul#topnav li .sub ul{list-style:none; margin:0; padding:0; width:150px; float:left}
+ul#topnav .sub ul li{width:100%; color:#333}
+ul#topnav .sub ul li:hover{border:none}
+ul#topnav .sub ul li hr{  border:0;  color:#dadada;  background-color:#dadada;  height:3px}
+ul#topnav .sub ul li h2{padding:0;  margin:0; font-size:1.3em; font-weight:normal}
+ul#topnav .sub ul li h2 a{padding:5px 0; background-image:none; color:#666; text-shadow:none}
+ul#topnav .sub ul li a{float:none; text-indent:0; /*--Reset text indent--*/height:auto; font-size:12px; padding:7px 5px 7px 15px; display:block; text-decoration:none; color:#333; text-shadow:none}
+ul#topnav .sub ul li a:hover{color:#ff5f00; background-position:5px 12px}
+
+#myprofilesub{min-width:500px; font-size:13px}
+#myprofilesub a img{float:left; margin-right:15px; border:5px solid #333}
+
+.sub{min-width:300px; font-size:11px}
+#mysupportsub li{display:block; float:none}
+
+.csearch #s{    float:left;     padding:0;     margin:6px 0 0 6px;     margin-bottom:15px !important;     border:0;     width:159px;     background:none;     color:#fff}
+.csearch #go{    float:right;    margin-bottom:10px;    margin-right:5px;        color:#fff}
+
+.categorydiv{float:left; padding-right:5px; padding-bottom:8px; border-right:1px dotted #ccc; border-bottom:1px dotted #ccc; font-size:28px; margin-right:6px; margin-bottom:-3px; margin-top:5px; color:#666}
+.categorydivarrow{height:72px; width:130px; background:url(icos/right_arrow.png) no-repeat; font-size:25px; position:relative; left:-120px; margin-bottom:-72px}
+
+/***
+ ***bread crumb nav bar stuff
+ ***/
+#crumbnav ul, #crumbnav li{list-style-type:none; padding:0; margin:0; font-size: 12px;}
+#crumbnav{height:40px}
+#crumbnav ul{height:40px; background:none}
+#crumbnav li{float:left; line-height:39px; color:#ccc; padding-left:.75em}
+#crumbnav li a{background:url(images/crumb4.png) no-repeat right center; display:block; padding:0 22px 0 0}
+#crumbnav li a:link, 
+#crumbnav li a:visited{color:#fff; text-decoration:none; text-shadow:0 -1px 1px rgba(0,0,0,0.25); font-size: 12px;}
+
+#crumbnav li a:hover, 
+#crumbnav li a:focus{color:#dd2c0d}
+#crumbnav .arrow{display:none !important}
+
+#crumbnav img{vertical-align:middle}
+
+ 
+ #middle-column2{ width:400px}
+ 
+ .minicalendar{ font-size:10px;  border:1px solid #ccc}
+ .calendar-controls{ }
+ 
+ 
+ /***
+ ***Core:side block stuff
+ ***/
+ 
+ #middle-column{border:1px solid #dadada; background:#fff; -moz-border-radius:2px; -webkit-border-radius:2px}
+ 
+ .sideblock{ border:none; -moz-border-radius:2px; -webkit-border-radius:2px}
+ #right-column{ padding-left:4px}
+ #left-column{ padding-right:4px}
+ .sideblock a{ text-decoration:none;  font-size:12px}
+#left-column .sideblock .header, #right-column .sideblock .header{background:url(images/sideback.png) repeat-x; border-top:5px solid #fff !important; border-left:4px solid #fff !important; border-right:4px solid #fff !important; -moz-box-shadow:0 1px 3px rgba(0,0,0,0.2); -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.2)}
+ .sideblock div.title{ }
+ #right-column .sideblock .header{}
+ .sideblock h2{text-transform:uppercase; font-weight:200; font-size:11px; text-shadow:0 -1px 1px rgba(0,0,0,0.25);  padding-top:7px;  padding-bottom:2px;  padding-left:12px;  color:#fff}
+ #left-column .sideblock h2{ padding-left:7px}
+ #right-column .sideblock h2{ position:relative;  text-align:left;  right:10px}
+ .sideblock .content{ border:none !important;  background:#fff;  -moz-box-shadow:0 1px 3px rgba(0,0,0,0.2); -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.2)}
+.header{border:none !important; font-size:22px; clear:both}
+.sitetopic{ border:none}
+.sitetopic ul, .sitetopic li{list-style-type:none; padding:0; margin:0}
+.coursebox{border:none; padding:0; margin:0}
+
+.boxwidthwide{  }
+.unlist{background:#fff; padding-top:10px; padding-bottom:10px; padding-left:20px; padding-right:20px}
+.unlist li{list-style-type:none; padding:0; margin:0}
+.unlist li a{text-decoration:none}
+.oddrow{background:#eee; border-top:1px dotted #ccc; border-bottom:1px dotted #ccc}
+.teachers li a, .teachers li{font-size:10px}
+.johnswitch{float:right; margin-top:4px}
+.categorybox{background:#fff;  text-align:left !important}
+.categorybox a{text-decoration:none}
+.categorybox td{padding-top:5px; padding-bottom:5px; border-bottom:1px dotted #ccc}
+.oddrowtd{background:#eee}
+
+#pfile{float:right; margin-right:10px; margin-top:0px}
+#pfile img{-moz-box-shadow:0px 1px 6px rgba(0,0,0,0.8); -webkit-box-shadow:0 1px 6px rgba(0,0,0,0.8);  -moz-border-radius:2px; -webkit-border-radius:2px; border:2px solid #fff; width:60px; height:60px}
+.pfiletext{float:left; margin-right:7px; color:#fff; text-align:right; margin-top:8px}
+
+.pfiletext a{color:#fff; font-size:11px; text-decoration:none}
+.pfiletext ul, .pfiletext li{list-style-type:none; padding:0; margin:0}
+
+.generalbox.sitetopic.box{}
+
+.navbutton2{display:inline; float:right; margin-top:17px}
+.navbutton2 img{margin-bottom:3px; border:0px solid #216477}
+.navbutton2 form, #crumbnav form{display:inline !important}
+.navbutton2 div, #crumbnav div{display:inline !important}
+.navbutton2 span, #crumbnav span{display:inline !important}
+h2.headingblock.header{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif !important; font-size:20px; text-align:left; text-transform:uppercase; font-weight:200; border-bottom:2px solid #0c253d !important; color:#0c253d; ; margin-top:4px; padding-left: 25px;}
+
+h2.headingblock.header.outline{font-size:18px; font-weight:200}
+h2.headingblock.header.outline span{color:#666}
+
+h2.main{color:#113759; text-transform:uppercase; font-weight:200; font-size:18px}
+/***
+ ***Core:Course 
+ ***/
+.coursebox{}
+.topics, .weeks{ background:#fff}
+body#site-index .headingblock, 
+body#course-view .headingblock{margin-bottom:0px}
+
+.section{}
+
+.section td.content{border-top:0px; border-left:0px; border-right:0px; padding-top:2px; padding-bottom:2px; padding-left:0px; border-bottom:1px dotted #ccc}
+.section td.content li, .section td.content ul{list-style:none; margin-left:0; padding:0 !important}
+.section td.content li a{color:#025167; text-decoration:none; font-size:13px}
+.section.main{padding-top:3px; padding-bottom:3px}
+.section td.side{  }
+.section td.left.side{vertical-align:top; font-weight:bold; font-size:13px; color:#666; width:7px}
+.section td.right.side{vertical-align:top; text-align:right; width:20px}
+
+.generalbox.box{border:none; }
+.section.current td.right.side{background:#ffc !important}
+.section.current td.left.side{background:#ffc !important}
+li.activity{margin-top:3px; margin-bottom:3px}
+table.forumpost{font-size:0.85em; margin-left:10px; margin-bottom:1px; border:none; margin-right:10px}
+
+.forumpost .commands a{color:#33c !important}
+.forumpost td.left{padding-right:5px; background:url(images/quoter.png) no-repeat; background-position:100% 0%}
+.forumpost .picture{background:none !important}
+.forumpost .picture img{border:4px solid #fff; border-bottom:9px solid #fff; -moz-box-shadow:0 1px 3px rgba(0,0,0,0.5); -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5); -webkit-transform:rotate(-2deg); -moz-transform:rotate(-2deg)}
+
+.forumpost .starter{background-color:#FFF}
+
+.forumpost td.content{border:3px solid #0d2a43; border-top:none; padding:1em 1em 1em 2em; background:#fff; -moz-border-radius-bottomright:4px; -moz-border-radius-bottomleft:4px; -webkit-border-bottom-left-radius:4px; -webkit-border-bottom-right-radius:4px}
+.forumpost td.topic{border:3px solid #0d2a43; border-bottom:none; padding:7px; background:#eee; -moz-border-radius-topright:4px; -moz-border-radius-topleft:4px; -webkit-border-top-left-radius:4px; -webkit-border-top-right-radius:4px}
+
+.forumpost .subject{color:#091d2f; font-size:16px}
+.forumpost .author{font-size:9px !important; color:#666; text-transform:uppercase; font-weight:200}
+.forumpost .side{background:none}
+
+.info .name a{font-weight:bold}
+.indent{margin-left:30px}
+
+#participants{width:80%}
+.generaltable, .forumheaderlist, .files, .editcourse{background:#fff; margin-left:auto; margin-right:auto; border:1px #666 solid}
+table.forumheaderlist{border:none !important; margin-top:10px; border-collapse:collapse; background:#fff}
+table.forumheaderlist a{text-decoration:none}
+table.forumheaderlist td.picture{border-left:none !important; border-right:none !important}
+table.forumheaderlist td.author{border-left:none !important}
+/***
+ ***table stuff
+ ***/
+.generaltable .header a, .forumheaderlist .header a{border:none; color:#fff !important; font-size:12px; text-decoration:none; padding:5px}
+
+.generaltable .header, .forumheaderlist .header, .files .header, .editcourse .header, .logtable .header{font-size:11px; text-transform:uppercase; font-weight:200; text-decoration:none; padding:5px; background:#091d2f url(images/butover.png) repeat-x !important; color:#fff !important; border-top:1px #666 solid !important}
+
+.generaltable td, .forumheaderlist td, .files td, .editcourse td, .logtable td{padding:5px; border:1px solid #666 !important; background:#fff; font-size:12px; color:#404040}
+
+.gentableodd td{background:#eee !important}
+.gentableoddtwo td{background:#eee !important}
+div.tablehover, .tablehover td{background:#ff3 !important}
+
+table.roledesc{border:none; background:#fff; font-weight:normal; font-size:11px; margin-left:auto; margin-right:auto}
+table.rolecap{font-size:12px; text-decoration:none; padding:5px; background:#fff; width:90%; margin-left:auto; margin-right:auto}
+table.rolecap th{font-size:11px; text-transform:uppercase; font-weight:200; text-decoration:none; padding:5px; background:#091d2f url(images/butover.png) repeat-x !important; border-top:1px #666 solid !important; color:#fff}
+
+table.rolecap th.name{border-left:1px #666 solid !important}
+table.rolecap td{padding:5px; border:1px solid #666 !important; background:#fff; font-size:12px; color:#404040}
+
+table.rolecap td.risk{border:none !important}
+
+table.rolecap td.header{font-size:15px; text-align:left; font-weight:bold; border-right:none !important; border-bottom:none !important; border-top:none !important; background:#ffc !important}
+table.rolecap td.capdefault{background:#ccc !important}
+table.rolecap td span.cap-desc{display:block; width:100%; text-align:left}
+table.rolecap td span.cap-name{display:block; width:100%; text-align:left; font-size:10px; color:#666}
+
+div.buttons{text-align:center}
+fieldset.clearfix, fieldset{border:1px solid #aaa; background:#fff !important;  -moz-border-radius:3px; -webkit-border-radius:3px}
+fieldset .fcontainer{ }
+
+fieldset.hidden, fieldset.felement{background:none}
+
+legend.ftoggler{background:none !important; color:#333 !important; font-size:21px; text-transform:uppercase; font-weight:200 !important}
+.minicalendar .event_course{background:#ffc !important; border-color:#666 !important}
+.minicalendar .today{background:#eee; border-color:#666 !important}
+#overDiv{background:#fff; border:1px solid #666 !important; -moz-border-radius:3px; -webkit-border-radius:3px; -moz-box-shadow:0 1px 3px rgba(0,0,0,0.5); -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5)}
+#overDiv table{border:none !important}
+.cal_popup_caption{background:#0c253d; color:#fff}
+
+.maincalendar{border:1px solid #aaa !important; -moz-border-radius:2px; -webkit-border-radius:2px; -moz-box-shadow:0 1px 3px rgba(0,0,0,0.2); -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.2); background:#fff}
+.maincalendar .header{text-transform:uppercase; font-weight:200 !important; font-size:16px}
+.maincalendar .calendar-controls{text-transform:uppercase; font-weight:200 !important; font-size:12px}
+.maincalendar td{border-color:#666 !important}
+.maincalendar .nottoday{background:#b6d9f8 url(images/butover.png) repeat-x !important}
+.maincalendar li a, .maincalendar li, .maincalendar ul{border:none !important; text-decoration:none; font-size:12px; color:#333}
+
+td.sidecalendar .sideblock h2{color:#025167 !important; text-shadow:none !important}
+td.sidecalendar div.sideblock{border:1px solid #aaa !important; background:#fff; -moz-border-radius:2px; -webkit-border-radius:2px}
+.event_course{background:#ffc; border:1px solid #ccc; }
+.event_global{background:#cff; border:1px solid #ccc; }
+.event_user{background:#fff; border:1px solid #ccc; }
+.event_group{background:#fcc; border:1px solid #ccc; }
+
+.weekdates{height:25px; width:28%; position:relative; text-transform:uppercase;  font-size:10px !important;  color:#0c253d; text-align:right;  padding-top:9px;  padding-bottom:0px;  padding-right:15px;  margin-right:3px;  border-bottom:2px solid #0c253d;  border-top:2px solid #0c253d;  float:right}
+ div.summary{ clear:both}
+ .userinfobox{ border:1px solid #dadada !important; -moz-border-radius:3px; -webkit-border-radius:3px; -moz-box-shadow:0 1px 3px rgba(0,0,0,0.5); -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5); background:#efefef}
+ .userinfobox td.content p{ font-size:30px}
+ .userinfobox td.side img{ border:13px solid #fff;  border-bottom:35px solid #fff;  -moz-border-radius:2px; -webkit-border-radius:2px; -moz-box-shadow:0 1px 3px rgba(0,0,0,0.2); -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.2); -webkit-transform:rotate(-3deg); -moz-transform:rotate(-3deg)}
+ /***
+ ***Core:tab stuff
+ ***/
+  .tabtree ul{padding:0px; margin:0px; list-style:none; background:none; margin-top:10px; margin-bottom:10px; border:none !important}
+
+ ul.tabrow1{ margin-bottom:10px}
+ ul.tabrow{ border:none !important}
+.tabrow0 li, .tabrow0 li a, .tabrow1 span{background:none !important; text-decoration:none !important}
+
+.tabrow0 li a span{background:none !important; text-decoration:none !important}
+.tabrow0 li{border-left:1px solid #ccc; border-top:1px solid #ccc; padding-top:5px; padding-bottom:3px; background:#091d2f url(images/butover.png) repeat-x !important;   -moz-border-radius-topleft:2px;  -webkit-border-top-left-radius:2px; -moz-border-radius-topright:2px; -webkit-border-top-right-radius:2px}
+.tabrow0 li:hover{background:#adcfed url(images/alert-overlay.png) repeat-x !important; color:#333}
+.tabrow0 li.last{border-right:1px solid #ccc}
+.tabrow0 li a span{color:#fff}
+.tabrow0 li a span:hover{color:#333}
+.tabrow0 li.selected{background:#adcfed url(images/alert-overlay.png) repeat-x !important}
+
+.tabrow0 li.selected a span{color:#333}
+
+ .sideblock{ }
+.sideblock .commands{background:url(images/commandsB.png) !important; border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px; padding-top:6px}
+
+.graph{margin-top:17px; margin-left:auto; margin-right:auto; border:1px solid #aaa; width:70%; height:15%}
+
+div.graph img{width:100%; height:100%}
+
+div.buttons div{display:inline}
+
+/***
+ ***button styling remove all for default buttons
+ ***/
+ #contents button, #contents input[type="submit"], #contents input[type="button"]{background:#041628 url(images/butover.png) repeat-x; display:inline-block; padding:5px 10px 6px; color:#fff; text-decoration:none; -moz-border-radius:3px; -webkit-border-radius:3px; -moz-box-shadow:0 1px 3px rgba(0,0,0,0.3); -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.3); text-shadow:0 -1px 1px rgba(0,0,0,0.25); position:relative; cursor:pointer; border:2px solid #dadada; font-size:10px}
+ .navbutton2 button:hover, .navbutton2 input[type="submit"]:hover, #contents button:hover, #contents input[type="submit"]:hover{background:#f00 url(images/butover.png) repeat-x; color:#fff}
+ button, input[type="submit"]:visited{top:1px}
+ 
+ .navbutton input[type="submit"] { padding:1px 1px 1px !important}
+ 
+ .sideblock input[type="submit"] { padding:3px 6px 4px !important}
+ 
+  .navbutton2 button, .navbutton2 input[type="submit"], .navbutton2 input[type="button"]{ background:#041628 url(images/butover.png) repeat-x; display:inline-block; padding:2px 4px 2px; color:#fff; text-decoration:none; -moz-border-radius:3px; -webkit-border-radius:3px; -moz-box-shadow:0 1px 3px rgba(0,0,0,0.5); -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5); text-shadow:0 -1px 1px rgba(0,0,0,0.25); margin-left:3px; position:relative; cursor:pointer; font-size:9px}
+/***
+ ***some hacks below to make the messaging pop up look okay
+ ***/
+#message-messages #crumbnav, #message-messages #topbar, #message-messages .topsad{ display:none}
+ 
+ #message-messages, #message-send{ background:#eee !important;  font-size:16px}
+
+ #myfootinner div.logininfo,
+ #myfootinner div.logininfo a {
+     font-size: 100%;
+}
+
+.block_site_main_menu .footer select {
+    font-size: 1em;
+}
