@@ -211,7 +211,10 @@ div.johndocsleft, span.johndocsleft {
     text-decoration: none;
     color: #eee;
     text-shadow: 1px -1px 1px #333;
-    font-size: 85%;
+}
+
+.breadcrumb li {
+	font-size: 85%;
 }
 
 .breadcrumb li a:hover {
@@ -283,8 +286,9 @@ span.arrow.sep {
     min-height: 33px;
     height: auto !important;
     height: 33px;
-    
-    background: [[setting:maincolor]] url([[pix:theme|bart5]]) repeat-x;
+    padding-left: 18px;
+    /*background: [[setting:maincolor]] url([[pix:theme|block_header_icon]]) no-repeat scroll 4px 7px;*/
+	background: [[setting:maincolor]] url([[pix:theme|bart5]]) repeat-x;
 }
 
 .block.hidden div.header {
