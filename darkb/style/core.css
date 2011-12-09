@@ -611,6 +611,10 @@ h3.sectionname, h2.headingblock,h2.main,h3.main, h2.main a, h3.main a, div.login
     background: none;
 }
 
+h3.sectionname {
+    text-align: left;
+}
+
 #page-my-index h3.main {
 	border-bottom: 0px;
 }
