@@ -38,43 +38,45 @@ echo $OUTPUT->doctype() ?>
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
 <div id="page">	
-<div id="headerwrap"><div id="page-header"></div>
-	<div id="headerinner">
-	
-	
-	<?php if ($haslogo) {
-                        echo html_writer::link(new moodle_url('/'), "<img src='".$PAGE->theme->settings->logo."' alt='logo' id='logo' />");
-                    } else { ?>
-                    <img src="<?php echo $OUTPUT->pix_url('logos', 'theme')?>" id="logo">
-                    
-             <?php       } ?>
-	
-	<?php if ($hascustommenu) { ?>
- 					<div id="custommenu2"><div id="custommenu"><?php echo $custommenu; ?></div></div>
-				<?php } ?>
-	<div id="ebutton">
-	<?php //if ($hasnavbar) { echo $PAGE->button; } ?>
-	</div>			
+<?php if ($hasheading || $hasnavbar) { ?>
+	<div id="headerwrap"><div id="page-header"></div>
+		<div id="headerinner">
+		
+		
+		<?php if ($haslogo) {
+							echo html_writer::link(new moodle_url('/'), "<img src='".$PAGE->theme->settings->logo."' alt='logo' id='logo' />");
+						} else { ?>
+						<img src="<?php echo $OUTPUT->pix_url('logos', 'theme')?>" id="logo">
+						
+				 <?php       } ?>
+		
+		<?php if ($hascustommenu) { ?>
+						<div id="custommenu2"><div id="custommenu"><?php echo $custommenu; ?></div></div>
+					<?php } ?>
+		<div id="ebutton">
+		<?php //if ($hasnavbar) { echo $PAGE->button; } ?>
+		</div>			
+			</div>
+	</div>					
+	<div id="jcontrols_button">
+		<div class="jcontrolsleft">
+			<?php if ($hasnavbar) { ?>
+				<div class="navbar clearfix">
+					<div class="breadcrumb"> <?php echo $OUTPUT->navbar();  ?></div>
+				</div>
+			<?php } ?>
 		</div>
-</div>					
-<div id="jcontrols_button">
-    <div class="jcontrolsleft">
-        <?php if ($hasnavbar) { ?>
-            <div class="navbar clearfix">
-                <div class="breadcrumb"> <?php echo $OUTPUT->navbar();  ?></div>
-            </div>
-        <?php } ?>
-    </div>
-	<div class="jcontrolsright">
-        <?php if ($hasheading) { 
-            if (!empty($PAGE->theme->settings->alwayslangmenu)) {
-                echo $OUTPUT->lang_menu();
-            }
-            echo $OUTPUT->login_info();
-            echo $PAGE->headingmenu;
-        } ?>
-    </div>
-</div>	
+		<div class="jcontrolsright">
+			<?php if ($hasheading) { 
+				if (!empty($PAGE->theme->settings->alwayslangmenu)) {
+					echo $OUTPUT->lang_menu();
+				}
+				echo $OUTPUT->login_info();
+				echo $PAGE->headingmenu;
+			} ?>
+		</div>
+	</div>	
+<?php } ?>
 <div id="contentwrapper">	
 	<!-- start OF moodle CONTENT -->
 				<div id="page-content">
@@ -94,8 +96,6 @@ echo $OUTPUT->doctype() ?>
                 	<?php if ($hassidepre) { ?>
                		<div id="region-pre" class="block-region">
                     	<div class="region-content">
-                   
-        
                         	<?php echo $OUTPUT->blocks_for_region('side-pre') ?>
                     	</div>
                 	</div>
@@ -117,29 +117,27 @@ echo $OUTPUT->doctype() ?>
 </div>      
 
 <br style="clear: both;"> 
- 
-<div id="footerwrapper">
-    <div id="footerinner" style="text-align: center">
-        <div id="footer-fix">
-			<div id="new-footer">
-				<?php if ($hasfooter) { 
-					echo $OUTPUT->login_info();
-					//echo $//OUTPUT->home_link();
-					//echo $OUTPUT->standard_footer_html();
-				?>
+<?php if ($hasfooter) { ?> 
+	<div id="footerwrapper">
+		<div id="footerinner" style="text-align: center">
+			<div id="footer-fix">
+				<div id="new-footer">
+					<?php if ($hasfooter) { 
+						echo $OUTPUT->login_info();
+						//echo $//OUTPUT->home_link();
+						//echo $OUTPUT->standard_footer_html();
+					?>
+				</div>
+				<?php /* <div class="johndocs"> 
+					<?php echo page_doc_link(get_string('moodledocslink')) ?>
+				<?php /*</div>
+				<?php echo $footnote; ?> */ ?>
+				<?php } ?>
+				<div class="clear"></div>
 			</div>
-			<?php /* <div class="johndocs"> 
-                <?php echo page_doc_link(get_string('moodledocslink')) ?>
-            <?php /*</div>
-            <?php echo $footnote; ?> */ ?>
-            <?php } ?>
-            <div class="clear"></div>
-        </div>
-    </div>
-    
-</div>
- 
- 
+		</div>		
+	</div>
+ <?php } ?>
  
  </div>    		
 
