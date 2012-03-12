@@ -67,6 +67,7 @@ echo $OUTPUT->doctype() ?>
 			<?php } ?>
 		</div>
 		<div class="jcontrolsright">
+            <div class="navbutton"><?php echo $PAGE->button; ?></div>
 			<?php if ($hasheading) { 
 				if (!empty($PAGE->theme->settings->alwayslangmenu)) {
 					echo $OUTPUT->lang_menu();
